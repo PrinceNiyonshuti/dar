@@ -194,7 +194,7 @@ if(isset($_SESSION['username']) == false){
                         Copyright &copy; <?php echo  date("Y"); ?> Car Transporter Dar
                     </div>
                     <div class="col-sm-6 text-right">
-                        Designed by <a href="https://nikao.rw/" target="_blank">Intare Security Lab</a>
+                        Designed by <a href="#" target="_blank">Intare Security Lab</a>
                     </div>
                 </div>
             </div>

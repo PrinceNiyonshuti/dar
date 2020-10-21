@@ -115,6 +115,7 @@
                                                   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
                                                 }
                                                 </script>
+                                                <!--  Google translator here -->
 
                                                 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                                             <div class="dropdown show" id="google_translate_element">
