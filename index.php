@@ -108,10 +108,16 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <!-- lang dropdown -->
-                                            <div class="dropdown show">
-                                                <a class="dropdown-toggle text-white text-uppercase" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="flag-icon flag-icon-us margin-right-8px"></span> English
-                              </a>
+                                            <div id="google_translate_element"></div>
+
+                                                <script type="text/javascript">
+                                                function googleTranslateElementInit() {
+                                                  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                                                }
+                                                </script>
+
+                                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                                            <div class="dropdown show" id="google_translate_element">
 
                                                 <div class="dropdown-menu text-small text-uppercase" aria-labelledby="dropdownMenuLink">
                                                     <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-es margin-right-8px"></span> Spanish</a>
