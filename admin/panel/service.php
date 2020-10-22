@@ -50,9 +50,9 @@
                             <div class="card-body">
                                 <div class="row">
                                 <div class="card-body">
-                                    <button type="button" class="btn btn-secondary mb-1" data-toggle="modal" data-target="#mediumModal" >
-                                                New Service
-                                            </button>
+                                    <button type="button" class="btn btn-primary mb-1" data-toggle="modal" data-target="#mediumModal" >
+                                        New Service
+                                    </button>
                                         <div class="card-title">
                                             <h3 class="text-center"><strong>Service</strong> </h3>
                                             
@@ -87,7 +87,7 @@
                                                         <td><?php echo $fetch['tittle']?></td>
                                                         <td><?php echo $fetch['details']?></td>
                                                         <td>
-                                                            <a href="edit_schedule.php&sched_id=<?php echo $sched_id;?>" title="Edit Worship Schedule" onclick="if(!confirm('Do you really want to Edit This Worship Schedule ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
+                                                            <a href="index.php?edit_service&service_id=<?php echo $service_id;?>" title="Edit Service" onclick="if(!confirm('Do you really want to Edit This Service ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
 
                                                                 -
 
@@ -151,41 +151,6 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                     <button  type="submit" name="new_schedule" class="btn btn-primary">Confirm</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="smallmodal" tabindex="-1" role="dialog" aria-labelledby="smallmodalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="smallmodalLabel">New FAQ </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <form id="form_validation" method="POST" action="">
-                <div class="modal-body">
-                    <div class="form-group form-float">
-                        <div class="form-line">
-                            <label class="form-label">FAQ Tittle</label>
-                            <input type="text" class="form-control" name="f_tittle" required >                            
-                        </div>
-                    </div>
-                    
-                    <div class="form-group form-float">
-                        <div class="form-line">
-                            <label class="form-label">Description</label>
-                            <textarea rows="5" class="form-control" name="f_descr" required></textarea>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="submit" name="new_schedule" class="btn btn-primary">Confirm</button>
                 </div>
             </form>
         </div>

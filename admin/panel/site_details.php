@@ -86,7 +86,7 @@
                             <div class="col-sm-4">
                                 <div class="page-header float-left">
                                     <div class="page-title">
-                                        <h1>You Have to Add Site Details <?php echo $data; ?></h1>
+                                        <h1>You Have to Add Site Details </h1>
                                     </div>
                                 </div>
                             </div>

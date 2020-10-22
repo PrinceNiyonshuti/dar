@@ -21,7 +21,7 @@
                 $lastId = $conn->lastInsertId();
 
                 echo '<script language="javascript">
-                    alert(" Partner Succefully Added ");
+                    alert(" Partner Successfully Added ");
                     window.location.href = "index.php?partner";
                 </script>';
                 
@@ -98,11 +98,11 @@
 
                                                     <tr>
                                                         <td><?php echo $no;?></td>
-                                                        <td><?php echo $fetch['logo']?></td>
+                                                        <td><img src="../img/partner/<?php echo $fetch['logo']?>" style="width: 160px;height: 76px;" ></td>
                                                         <td><?php echo $fetch['p_name']?></td>
                                                         <td><?php echo $fetch['date']?></td>
                                                         <td>
-                                                            <a href="edit_schedule.php&sched_id=<?php echo $sched_id;?>" title="Edit Worship Schedule" onclick="if(!confirm('Do you really want to Edit This Worship Schedule ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
+                                                            <a href="index.php?edit_partner&partner_id=<?php echo $partner_id;?>" title="Edit Partner" onclick="if(!confirm('Do you really want to Edit This Partner ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
 
                                                                 -
 
@@ -169,19 +169,19 @@
 
 <script>
 
-                                        function readURL(input) {
-                                            if (input.files && input.files[0]) {
-                                                var reader = new FileReader();
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
-                                                reader.onload = function (e) {
-                                                    $('#blah')
-                                                        .attr('src', e.target.result)
-                                                        .width(250)
-                                                        .height(300);
-                                                };
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(250)
+                    .height(300);
+            };
 
-                                                reader.readAsDataURL(input.files[0]);
-                                            }
-                                                }
-                                            
-                                        </script>
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+</script>

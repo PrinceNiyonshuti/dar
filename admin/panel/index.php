@@ -99,11 +99,15 @@ if(isset($_SESSION['username']) == false){
                     </li>
 
                     <li>
-                       <a href="index.php?record"><i class="menu-icon active fa fa-tasks"></i> Quotes </a>
+                       <a href="index.php?quote"><i class="menu-icon active fa fa-tasks"></i> Quotes </a>
                     </li>
 
                     <li>
-                       <a href="index.php?record"><i class="menu-icon active fa fa-tasks"></i> Feedback </a>
+                       <a href="index.php?feedback"><i class="menu-icon active fa fa-tasks"></i> Feedback </a>
+                    </li> 
+
+                    <li>
+                       <a href="index.php?tax"><i class="menu-icon active fa fa-tasks"></i> Tax Calculations </a>
                     </li>     
                     
                     
@@ -175,6 +179,36 @@ if(isset($_SESSION['username']) == false){
         elseif(isset($_GET['member']))
         {           
             include("member.php");
+        }
+
+        elseif(isset($_GET['edit_service']))
+        {           
+            include("service_edit.php");
+        }
+
+        elseif(isset($_GET['edit_faq']))
+        {           
+            include("faq_edit.php");
+        }
+
+        elseif(isset($_GET['tax']))
+        {           
+            include("tax.php");
+        }
+
+        elseif(isset($_GET['edit_partner']))
+        {           
+            include("partner_edit.php");
+        }
+
+        elseif(isset($_GET['quote']))
+        {           
+            include("quote.php");
+        }
+
+        elseif(isset($_GET['feedback']))
+        {           
+            include("feedback.php");
         }
 
         else

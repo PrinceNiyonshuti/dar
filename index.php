@@ -182,6 +182,10 @@
                                             <a style="color: #ffc107;" href="index.php?blog">Blog</a>
                                         </li>
 
+                                        <li>
+                                            <a style="color: #ffc107;" href="index.php?tax">Tax Calculation</a>
+                                        </li>
+
                                     </ul>
 
 
@@ -315,6 +319,11 @@
         elseif(isset($_GET['blog']))
         {           
             include("blog.php");
+        }
+
+        elseif(isset($_GET['tax']))
+        {           
+            include("tax.php");
         }
 
         elseif(isset($_GET['blog_details']))

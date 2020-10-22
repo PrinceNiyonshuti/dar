@@ -49,10 +49,11 @@
                             <div class="card-body">
                                 <div class="row">
                                 <div class="card-body">
+                                    <button type="button" class="btn btn-primary mb-1 " data-toggle="modal" data-target="#smallmodal">
+                                        New FAQ
+                                    </button>
                                         <div class="card-title">
-                                            <h3 class="text-center"><strong>Frequently Asked Questions (FAQ's)</strong> <button type="button" class="btn btn-primary mb-1 pull-right" data-toggle="modal" data-target="#smallmodal">
-                                                New FAQ
-                                            </button></h3>
+                                            <h3 class="text-center"><strong>Frequently Asked Questions (FAQ's)</strong> </h3>
                                             
                                         </div>
                                         <hr>
@@ -77,7 +78,7 @@
                                                         $query->execute();
                                                             
                                                             while($fetch = $query->fetch()){
-                                                                $sched_id=$fetch['faq_id'];
+                                                                $faq_id=$fetch['faq_id'];
                                                                 $no +=1;
                                                     ?>
 
@@ -87,7 +88,7 @@
                                                         <td><?php echo $fetch['details']?></td>
                                                         <td><?php echo $fetch['date']?></td>
                                                         <td>
-                                                            <a href="edit_schedule.php&sched_id=<?php echo $sched_id;?>" title="Edit Worship Schedule" onclick="if(!confirm('Do you really want to Edit This Worship Schedule ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
+                                                            <a href="index.php?edit_faq&faq_id=<?php echo $faq_id;?>" title="Edit FAQ" onclick="if(!confirm('Do you really want to Edit This FAQ ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
 
                                                                 -
 

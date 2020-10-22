@@ -48,7 +48,9 @@
 							</div>
 							<div class="clearfix"></div>
 						</div>
+						&nbsp;
 					</div>
+
                 <?php
                     }
                 ?>
