@@ -96,7 +96,7 @@
                     <!-- Up Head -->
                     <div class="up-head d-none d-lg-block background-grey-4">
                         <div class="container">
-                            <div class="row">
+                            <div class="row" style="color: #ffc107;">
                                 <div class="col-xl-8 col-lg-12">
                                     <div class="row">
                                         <div class="col-md-4"><i class="fa fa-phone margin-right-10px"></i>+<?php echo $phone; ?> / +<?php echo $mobile; ?></div>
