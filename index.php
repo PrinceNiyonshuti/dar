@@ -91,7 +91,7 @@
     <header class="background-white">
         <div class="header-output">
             <div class="header-output">
-                <div class="header-in">
+                <div class="header-in" style="background-color: #474747;">
 
                     <!-- Up Head -->
                     <div class="up-head d-none d-lg-block background-grey-4">
@@ -157,29 +157,29 @@
                                     <a class="mobile-toggle padding-15px background-second-color border-radius-3" href="#"><i class="fa fa-bars"></i></a>
                                 </div>
                                 <div class="col-lg-7 col-md-12 position-inherit">
-                                    <ul id="menu-main" class="nav-menu float-xl-left text-lg-center link-padding-tb-25px dropdown-dark">
-                                        <li><a href="index.php">Home</a>
+                                    <ul id="menu-main" class="nav-menu float-xl-left text-lg-center link-padding-tb-25px dropdown-dark" >
+                                        <li><a  style="color: #ffc107;" href="index.php">Home</a>
                                         </li>
 
-                                        <li class="has-dropdown"><a href="#">About</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.php?about">About Us</a></li>
-                                                <li><a href="index.php?faq">Faqs</a></li>
-                                                <li><a href="index.php?team">Our Team</a></li>
-                                                <li><a href="index.php?price">Price Table</a></li>
-                                                <li><a href="index.php?partner">Our Partners</a></li>
+                                        <li class="has-dropdown"><a style="color: #ffc107;" href="#">About</a>
+                                            <ul class="sub-menu" >
+                                                <li ><a style="color: #ffc107;" href="index.php?about">About Us</a></li>
+                                                <li><a style="color: #ffc107;" href="index.php?faq">Faqs</a></li>
+                                                <li><a style="color: #ffc107;" href="index.php?team">Our Team</a></li>
+                                                <li><a style="color: #ffc107;" href="index.php?price">Price Table</a></li>
+                                                <li><a style="color: #ffc107;" href="index.php?partner">Our Partners</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="index.php?service">Services</a>
+                                            <a style="color: #ffc107;" href="index.php?service">Services</a>
                                         </li>
 
                                         <li>
-                                            <a href="index.php?contact">Contact Us</a>
+                                            <a style="color: #ffc107;" href="index.php?contact">Contact Us</a>
                                         </li>
 
                                         <li>
-                                            <a href="index.php?blog">Blog</a>
+                                            <a style="color: #ffc107;" href="index.php?blog">Blog</a>
                                         </li>
 
                                     </ul>
