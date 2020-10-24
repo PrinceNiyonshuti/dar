@@ -26,84 +26,35 @@
 
 			<div class="row">
 
-				<div class="col-lg-3 col-md-6">
-					<div class="team layout-2">
-						<div class="img-team">
-							<img src="assets/img/team-1.jpg" alt="">
-						</div>
-						<div class="padding-20px">
-							<h3>Gassim Kakoom</h3>
-							<div class="jop">Engineer</div>
-							<ul class="social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a class="youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							</ul>
+				<?php
+
+                    $sql = " SELECT * FROM `team` order by team_id DESC LIMIT 4 ";
+                    $query = $conn->prepare($sql);
+                    $query->execute();
+                    $data = $query->rowCount();
+                    while($fetch = $query->fetch()){
+                ?>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="team layout-2">
+							<div class="img-team">
+								<img src="admin/img/team/<?php echo $fetch['profile']?>" alt="">
+							</div>
+							<div class="padding-20px">
+								<h3><?php echo $fetch['full_name'];?></h3>
+								<div class="jop"><?php echo $fetch['tittle'];?></div>
+								<ul class="social-list">
+									<li><a class="linkedin" href="<?php echo $fetch['linked_in'];?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a class="google" href="<?php echo $fetch['gmail'];?>"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+									<li><a class="twitter" href="<?php echo $fetch['twitter'];?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
 
-
-				<div class="col-lg-3 col-md-6">
-					<div class="team layout-2">
-						<div class="img-team">
-							<img src="assets/img/team-2.jpg" alt="">
-						</div>
-						<div class="padding-20px">
-							<h3>Rabie Elkheir</h3>
-							<div class="jop">Ceo</div>
-							<ul class="social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a class="youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-lg-3 col-md-6">
-					<div class="team layout-2">
-						<div class="img-team">
-							<img src="assets/img/team-3.jpg" alt="">
-						</div>
-						<div class="padding-20px">
-							<h3>Salim Ahmed</h3>
-							<div class="jop">Engineer</div>
-							<ul class="social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a class="youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="col-lg-3 col-md-6">
-					<div class="team layout-2">
-						<div class="img-team">
-							<img src="assets/img/team-4.jpg" alt="">
-						</div>
-						<div class="padding-20px">
-							<h3>Ali Abakker</h3>
-							<div class="jop">Engineer</div>
-							<ul class="social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a class="youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				<?php
+                    }
+                ?>
 
 			</div>
 

@@ -99,6 +99,14 @@ if(isset($_SESSION['username']) == false){
                     </li>
 
                     <li>
+                       <a href="index.php?price"><i class="menu-icon active fa fa-tasks"></i> Price </a>
+                    </li>
+
+                    <li>
+                       <a href="index.php?team"><i class="menu-icon active fa fa-tasks"></i> Team </a>
+                    </li>
+
+                    <li>
                        <a href="index.php?quote"><i class="menu-icon active fa fa-tasks"></i> Quotes </a>
                     </li>
 
@@ -194,6 +202,16 @@ if(isset($_SESSION['username']) == false){
         elseif(isset($_GET['tax']))
         {           
             include("tax.php");
+        }
+
+        elseif(isset($_GET['team']))
+        {           
+            include("team.php");
+        }
+
+        elseif(isset($_GET['price']))
+        {           
+            include("price.php");
         }
 
         elseif(isset($_GET['edit_partner']))

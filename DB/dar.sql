@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2020 at 11:00 AM
+-- Generation Time: Oct 24, 2020 at 07:09 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.15
 
@@ -90,6 +90,27 @@ CREATE TABLE `partner` (
 INSERT INTO `partner` (`partner_id`, `p_name`, `logo`, `date`) VALUES
 (4, 'Partner ', 'Partner .jpg', '2020-10-20 10:11:14'),
 (5, 'AACR', 'AACR.jpeg', '2020-10-22 22:43:11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `price`
+--
+
+CREATE TABLE `price` (
+  `price_id` int(11) NOT NULL,
+  `price_name` longtext DEFAULT NULL,
+  `amount` longtext DEFAULT NULL,
+  `photo` longtext DEFAULT NULL,
+  `descr` longtext DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `price`
+--
+
+INSERT INTO `price` (`price_id`, `price_name`, `amount`, `photo`, `descr`) VALUES
+(3, 'Basic', '150', 'Basic.jpg', 'The basic plan is for all that we transport their cars and its for everyone and its cheap and bit slow');
 
 -- --------------------------------------------------------
 
@@ -204,6 +225,29 @@ CREATE TABLE `tbl_users_login` (
 INSERT INTO `tbl_users_login` (`login_id`, `f_name`, `l_name`, `username`, `password`, `role_id`, `profile_id`, `telephone`, `date`, `status_login`) VALUES
 (1, 'Site', 'Admin', 'admin', '3cd2c7e2f10e5b234c6d465da1720a11', 4, 1, '0780900900', '2020-10-18', 1);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `team`
+--
+
+CREATE TABLE `team` (
+  `team_id` int(11) NOT NULL,
+  `full_name` longtext NOT NULL,
+  `tittle` longtext NOT NULL,
+  `profile` longtext NOT NULL,
+  `linked_in` longtext NOT NULL,
+  `gmail` longtext NOT NULL,
+  `twitter` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `team`
+--
+
+INSERT INTO `team` (`team_id`, `full_name`, `tittle`, `profile`, `linked_in`, `gmail`, `twitter`) VALUES
+(2, 'Gassim Kakoom', 'Engineer', 'Gassim Kakoom.jpg', 'gassimKakoom', 'gassim@gmail.com', '@gassim');
+
 --
 -- Indexes for dumped tables
 --
@@ -225,6 +269,12 @@ ALTER TABLE `faq`
 --
 ALTER TABLE `partner`
   ADD PRIMARY KEY (`partner_id`);
+
+--
+-- Indexes for table `price`
+--
+ALTER TABLE `price`
+  ADD PRIMARY KEY (`price_id`);
 
 --
 -- Indexes for table `quote`
@@ -257,6 +307,12 @@ ALTER TABLE `tbl_users_login`
   ADD PRIMARY KEY (`login_id`);
 
 --
+-- Indexes for table `team`
+--
+ALTER TABLE `team`
+  ADD PRIMARY KEY (`team_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -277,6 +333,12 @@ ALTER TABLE `faq`
 --
 ALTER TABLE `partner`
   MODIFY `partner_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `price`
+--
+ALTER TABLE `price`
+  MODIFY `price_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `quote`
@@ -307,6 +369,12 @@ ALTER TABLE `tax_calculation`
 --
 ALTER TABLE `tbl_users_login`
   MODIFY `login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `team`
+--
+ALTER TABLE `team`
+  MODIFY `team_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
