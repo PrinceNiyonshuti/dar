@@ -3,8 +3,15 @@ include "../admin/config/config.php";
 
 $f_name = $_POST['f_name'];
 $mail = $_POST['mail'];
-$address = $_POST['address'];
+$tel = $_POST['tel'];
+$vehicle = $_POST['vehicle'];
+$model = $_POST['model'];
+$car_from = $_POST['car_from'];
+$car_to = $_POST['car_to'];
+$exp_date = $_POST['exp_date'];
 $detail = $_POST['detail'];
+
+
 $date = date("Y-m-d");
 
 $start = $date." 00:00:00";
@@ -26,7 +33,7 @@ if ($data >=1) {
 } else {
    
    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = " INSERT INTO `quote`(`full_name`, `email`, `addres`, `detail`) VALUES ('$f_name','$mail','$address','$detail') ";
+    $sql = " INSERT INTO `quote`(`full_name`, `email`, `tel`, `vehicle`, `model`, `car_from`, `car_to`, `exepcted_time`, `detail`)  VALUES ('$f_name','$mail','$tel','$vehicle','$model','$car_from','$car_to','$exp_date','$detail') ";
     $conn->exec($sql);
     $lastId = $conn->lastInsertId();
 

@@ -23,13 +23,23 @@ function quote(){
 
   var f_name=ge('f_name').value;
   var mail=ge('mail').value;
-  var address=ge('address').value;
+  var tel=ge('tel').value;
+  var vehicle=ge('vehicle').value;
+  var model=ge('model').value;
+  var car_from=ge('car_from').value;
+  var car_to=ge('car_to').value;
+  var exp_date=ge('exp_date').value;
   var detail=ge('detail').value;
   
   var send_data1=
       "&f_name="+f_name+
       "&mail="+mail+
-      "&address="+address+
+      "&tel="+tel+
+      "&vehicle="+vehicle+
+      "&model="+model+
+      "&car_from="+car_from+
+      "&car_to="+car_to+
+      "&exp_date="+exp_date+
       "&detail="+detail;
 
     ajax_changetab_and_send_data('pages/quote.php', 'quote_data', send_data1);

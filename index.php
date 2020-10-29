@@ -18,38 +18,6 @@
         $about=$fetch['about'];
     }
 ?>
-
- <?php
-
-    if(ISSET($_POST['send_quote'])){
-        try {
-            $f_name = $_POST['f_name'];
-            $mail = $_POST['mail'];
-            $address = $_POST['address'];
-            $detail = $_POST['detail'];
-                        
-                //for new Schedule..
-                
-                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $sql = " INSERT INTO `quote`(`full_name`, `email`, `addres`, `detail`) VALUES ('$f_name','$mail','$address','$message') ";
-                $conn->exec($sql);
-                $lastId = $conn->lastInsertId();
-                
-              // $message=" Worship Schedule Added Successfully";
-                 echo '<script language="javascript">
-                      alert(" Thanks  For Contacting Us ");
-                      window.location.href = "index.php";
-                      </script>';
-                
-                }catch(PDOException $e){
-                    echo $e->getMessage();
-                }
-                
-                $conn = null;
-                header('location: index.php');
-             }
-        
-    ?> 
 <!-- home-200:30-->
 <head>
     <title>Car Transported - Dar</title>
@@ -250,10 +218,35 @@
                                         <input type="email" class="form-control" name="mail" id="mail" placeholder="Email" required="">
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Address</label>
-                                    <input type="text" class="form-control" name="address" id="address" placeholder="1234 Main St" required="">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>Expected Time</label>
+                                        <input type="date" class="form-control" name="exp_date" id="exp_date" placeholder="From Place" required="">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Tel</label>
+                                        <input type="number" class="form-control" name="tel" id="tel" placeholder="To place" required="">
+                                    </div>
                                 </div>
+                                <div class="form-group">
+                                    <label>Vehicle</label>
+                                    <input type="text" class="form-control" name="vehicle" id="vehicle" placeholder="Vehicle Name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label>Model</label>
+                                    <input type="text" class="form-control" name="model" id="model" placeholder="Vehicle Model " required="">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label>From</label>
+                                        <input type="text" class="form-control" name="car_from" id="car_from" placeholder="From Place" required="">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>To</label>
+                                        <input type="text" class="form-control" name="car_to" id="car_to" placeholder="To place" required="">
+                                    </div>
+                                </div>
+                                
                                 <div class="form-group">
                                     <label>Message</label>
                                     <textarea class="form-control" name="detail" id="detail" rows="3" required=""></textarea>

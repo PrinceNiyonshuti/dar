@@ -34,7 +34,7 @@
                                                         <th>#</th>
                                                         <th>Names</th>
                                                         <th>E-mail</th>
-                                                        <th>Address</th>
+                                                        <th>Contact</th>
                                                         <th>Details</th>
                                                         <th>Action</th>
                                                        
@@ -56,7 +56,7 @@
                                                         <td><?php echo $no;?></td>
                                                         <td><?php echo $fetch['full_name']?></td>
                                                         <td><?php echo $fetch['email']?></td>
-                                                        <td><?php echo $fetch['addres']?></td>
+                                                        <td><?php echo $fetch['tel']?></td>
                                                         <td><?php echo $fetch['detail']?></td>
                                                         <td>
 
