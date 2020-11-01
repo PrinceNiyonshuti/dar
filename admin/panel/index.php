@@ -22,6 +22,14 @@ if(isset($_GET["sign"]))
 if(isset($_SESSION['username']) == false){
     header("Location:../index.php");
 }else{
+
+    $sql5=" SELECT * from favicon  ";
+    $result5=$conn->query($sql5);
+    while ($row5 = $result5->fetch()) {
+        $favicon=$row5['favicon'];
+        $logo=$row5['logo'];
+    }
+
     ?>
 
 <!doctype html>
@@ -34,8 +42,8 @@ if(isset($_SESSION['username']) == false){
   
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="../asset/images/log.png">
-    <link rel="shortcut icon" href="../asset/images/log.png"> 
+    <link rel="apple-touch-icon" href="../img/logo/<?php echo $favicon; ?>">
+    <link rel="shortcut icon" href="../img/logo/<?php echo $favicon; ?>"> 
 
     <link rel="stylesheet" href="../asset/css/normalize.css">
     <link rel="stylesheet" href="../asset/css/bootstrap.min.css">
@@ -80,6 +88,10 @@ if(isset($_SESSION['username']) == false){
 
                     <li>
                        <a href="index.php?home"><i class="menu-icon active fa fa-laptop"></i> Dashboard </a>
+                    </li>
+
+                    <li>
+                       <a href="index.php?logo"><i class="menu-icon active fa fa-tasks"></i> Site Logo </a>
                     </li>
 
                     <li>
@@ -135,8 +147,8 @@ if(isset($_SESSION['username']) == false){
         <header id="header" class="header">  
             <div class="top-left">
                 <div class="navbar-header"> 
-                    <a class="navbar-brand" href="index.php"><img src="../asset/images/logo.png" alt="Logo"></a>
-                    <a class="navbar-brand hidden" href="./"><img src="../asset/images/logo.png" alt="Logo"></a> 
+                    <a class="navbar-brand" href="index.php"><img src="../img/logo/<?php echo $logo; ?>" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="./"><img src="../img/logo/<?php echo $logo; ?>" alt="Logo"></a> 
                     <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a> 
                 </div> 
             </div>
@@ -209,9 +221,19 @@ if(isset($_SESSION['username']) == false){
             include("team.php");
         }
 
+        elseif(isset($_GET['edit_team']))
+        {           
+            include("team_edit.php");
+        }
+
         elseif(isset($_GET['price']))
         {           
             include("price.php");
+        }
+
+        elseif(isset($_GET['edit_price']))
+        {           
+            include("price_edit.php");
         }
 
         elseif(isset($_GET['edit_partner']))
@@ -227,6 +249,11 @@ if(isset($_SESSION['username']) == false){
         elseif(isset($_GET['feedback']))
         {           
             include("feedback.php");
+        }
+
+        elseif(isset($_GET['logo']))
+        {           
+            include("logo.php");
         }
 
         else

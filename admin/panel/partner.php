@@ -98,7 +98,9 @@
 
                                                     <tr>
                                                         <td><?php echo $no;?></td>
-                                                        <td><img src="../img/partner/<?php echo $fetch['logo']?>" style="width: 160px;height: 76px;" ></td>
+                                                        <td>
+                                                            <img src="../img/partner/<?php echo $fetch['logo']?>" style="width: 160px;height: 76px;" >
+                                                        </td>
                                                         <td><?php echo $fetch['p_name']?></td>
                                                         <td><?php echo $fetch['date']?></td>
                                                         <td>
@@ -182,6 +184,5 @@
 
             reader.readAsDataURL(input.files[0]);
         }
-    }
-    
+    }    
 </script>

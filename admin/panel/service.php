@@ -3,29 +3,42 @@
 
     if(ISSET($_POST['new_schedule'])){
         try {
+
             $serv_tittle = $_POST['serv_tittle'];
             $serv_descr = $_POST['serv_descr'];
-                        
-                //for new Schedule..
+
+            $profile=$_FILES['profile'];
+            $file_name = $_FILES['profile']['name'];
+            $ext = strtolower(substr(strrchr($file_name, '.'), 1));
+            $file_location = $_FILES['profile']['tmp_name'];
+            $new_file_name = $serv_tittle . '.' . $ext;
+            
+            if(move_uploaded_file($file_location, "../img/service/" . $new_file_name)){
                 
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                $sql = " INSERT INTO `service`(`tittle`, `details`) VALUES ('$serv_tittle','$serv_descr') ";
+                $sql = " INSERT INTO `service`(`tittle`, `details`, `photo`) VALUES ('$serv_tittle','$serv_descr','$new_file_name') ";
                 $conn->exec($sql);
                 $lastId = $conn->lastInsertId();
+
+                echo '<script language="javascript">
+                    alert(" New Service Successfully Created ");
+                    window.location.href = "index.php?service";
+                </script>';
                 
-              // $message=" Worship Schedule Added Successfully";
-                 echo '<script language="javascript">
-                      alert(" New Service Successfully Created ");
-                      window.location.href = "index.php?service";
-                      </script>';
+            }else{
+                echo '<script language="javascript">
+                    alert(" Something Went Wrong ");
+                    window.location.href = "index.php?service";
+                </script>';
+            }
                 
-                }catch(PDOException $e){
-                    echo $e->getMessage();
-                }
-                
-                $conn = null;
-                header('location: index.php?service');
-             }
+            }catch(PDOException $e){
+                echo $e->getMessage();
+            }
+            
+            $conn = null;
+            header('location: index.php?service');
+         }
         
     ?>
  
@@ -64,6 +77,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th>#</th>
+                                                        <th>Avatar</th>
                                                         <th>Tittle</th>
                                                         <th>Details</th>
                                                         <th>Action</th>
@@ -84,6 +98,9 @@
 
                                                     <tr>
                                                         <td><?php echo $no;?></td>
+                                                        <td>
+                                                            <img src="../img/service/<?php echo $fetch['photo']?>" style="width: 160px;height: 76px;" >
+                                                        </td>
                                                         <td><?php echo $fetch['tittle']?></td>
                                                         <td><?php echo $fetch['details']?></td>
                                                         <td>
@@ -124,13 +141,13 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form id="form_validation" method="POST" action="">
+            <form id="form_validation" method="POST" action="" enctype="multipart/form-data">
                 <div class="modal-body">
                     <div class="form-group form-float">
                         <div class="form-line">
-                            <img class="align-self-center  mr-3" src="../asset/images/blog.png" alt="Blog Cover" id="blah" alt="Card image cap" width="300px" height="290px">
+                            <img class="align-self-center  mr-3" src="../asset/images/blog.png" alt="Blog Cover" id="blah" alt="Card image cap" width="500px" height="400px">
                             <br><br>
-                            <input type='file' id="profile" name="profile" onchange="readURL(this);" multiple="" />                         
+                            <input type='file' id="profile" name="profile" onchange="readURL(this);" />                         
                         </div>
                     </div>
 
@@ -156,3 +173,22 @@
         </div>
     </div>
 </div>
+
+<script>
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(500)
+                    .height(400);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+</script>

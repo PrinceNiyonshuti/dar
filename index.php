@@ -17,10 +17,19 @@
         $email=$fetch['email'];
         $about=$fetch['about'];
     }
+
+    $sql5=" SELECT * from favicon  ";
+    $result5=$conn->query($sql5);
+    while ($row5 = $result5->fetch()) {
+        $favicon=$row5['favicon'];
+        $logo=$row5['logo'];
+    }
 ?>
 <!-- home-200:30-->
 <head>
     <title>Car Transported - Dar</title>
+    <link rel="apple-touch-icon" href="admin/img/logo/<?php echo $favicon; ?>">
+    <link rel="shortcut icon" href="admin/img/logo/<?php echo $favicon; ?>"> 
     <meta name="author" content="Car Transported - Dar">
     <meta name="robots" content="index follow">
     <meta name="googlebot" content="index follow">
@@ -121,7 +130,7 @@
                         <div class="position-relative">
                             <div class="row">
                                 <div class="col-lg-3 col-md-12">
-                                    <a id="logo" href="index.php" class="d-inline-block margin-tb-15px"><img src="assets/img/logo-dark.png" alt=""></a>
+                                    <a id="logo" href="index.php" class="d-inline-block margin-tb-15px"><img src="admin/img/logo/<?php echo $logo; ?>" alt="" width="188px" height="41px"></a>
                                     <a class="mobile-toggle padding-15px background-second-color border-radius-3" href="#"><i class="fa fa-bars"></i></a>
                                 </div>
                                 <div class="col-lg-7 col-md-12 position-inherit">
@@ -338,7 +347,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="about-us sm-mb-45px">
                         <div class="logo-footer margin-bottom-35px">
-                            <a href="#"><img src="assets/img/logo-1.png" alt=""></a>
+                            <a href="#"><img src="admin/img/logo/<?php echo $logo; ?>" alt="" width="188px" height="41px"></a>
                         </div>
                         <div class="text margin-bottom-35px">
                             <?php echo $description; ?>

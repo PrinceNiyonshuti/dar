@@ -42,7 +42,7 @@
             
             $conn = null;
             header('location: index.php?team');
-        }
+    }
         
     ?>
  
@@ -108,7 +108,7 @@
                                                         <td><?php echo $fetch['tittle']?></td>
                                                         <td><?php echo $fetch['gmail']?></td>
                                                         <td>
-                                                            <a href="index.php?edit_partner&partner_id=<?php echo $team_id;?>" title="Edit Team Member" onclick="if(!confirm('Do you really want to Edit This Team Member ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
+                                                            <a href="index.php?edit_team&team_id=<?php echo $team_id;?>" title="Edit Team Member" onclick="if(!confirm('Do you really want to Edit This Team Member ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
 
                                                                 -
 

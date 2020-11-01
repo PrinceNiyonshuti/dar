@@ -38,7 +38,7 @@
                     <div class="col-lg-6 sm-mb-45px">
 						<div class="background-white thum-hover box-shadow hvr-float full-width wow fadeInUp">
 							<div class="float-md-left margin-right-30px thum-xs">
-								<img src="assets/img/cart-2.jpg" alt="">
+								<img src="admin/img/service/<?php echo $fetch['photo']; ?>" width="200px" height="200px" alt="">
 							</div>
 							<div class="padding-25px">
 								<i class="fa fa-folder-open text-main-color"></i>Service

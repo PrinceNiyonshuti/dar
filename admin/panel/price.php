@@ -34,13 +34,13 @@
                 </script>';
             }
                 
-            }catch(PDOException $e){
-                echo $e->getMessage();
-            }
-            
-            $conn = null;
-            header('location: index.php?price');
+        }catch(PDOException $e){
+            echo $e->getMessage();
         }
+        
+        $conn = null;
+        header('location: index.php?price');
+    }
         
     ?>
  
@@ -106,7 +106,7 @@
                                                         <td><?php echo $fetch['amount']?></td>
                                                         <td><?php echo $fetch['descr']?></td>
                                                         <td>
-                                                            <a href="index.php?edit_partner&partner_id=<?php echo $price_id;?>" title="Edit Price" onclick="if(!confirm('Do you really want to Edit This Price ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
+                                                            <a href="index.php?edit_price&price_id=<?php echo $price_id;?>" title="Edit Price" onclick="if(!confirm('Do you really want to Edit This Price ?'))return false;else return true;"><i class='menu-icon fa fa-file'></i> Edit</a>
 
                                                                 -
 

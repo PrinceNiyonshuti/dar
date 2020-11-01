@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2020 at 07:09 PM
+-- Generation Time: Nov 01, 2020 at 11:07 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.15
 
@@ -73,6 +73,25 @@ INSERT INTO `faq` (`faq_id`, `tittle`, `details`, `date`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `favicon`
+--
+
+CREATE TABLE `favicon` (
+  `fav_id` int(11) NOT NULL,
+  `logo` longtext DEFAULT NULL,
+  `favicon` longtext DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `favicon`
+--
+
+INSERT INTO `favicon` (`fav_id`, `logo`, `favicon`) VALUES
+(2, 'logo.png', 'favicon.png');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `partner`
 --
 
@@ -122,7 +141,12 @@ CREATE TABLE `quote` (
   `quote_id` int(11) NOT NULL,
   `full_name` longtext DEFAULT NULL,
   `email` longtext DEFAULT NULL,
-  `addres` longtext DEFAULT NULL,
+  `tel` longtext DEFAULT NULL,
+  `vehicle` longtext NOT NULL,
+  `model` longtext NOT NULL,
+  `car_from` longtext NOT NULL,
+  `car_to` longtext NOT NULL,
+  `exepcted_time` date NOT NULL,
   `detail` longtext NOT NULL,
   `gen_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -131,8 +155,8 @@ CREATE TABLE `quote` (
 -- Dumping data for table `quote`
 --
 
-INSERT INTO `quote` (`quote_id`, `full_name`, `email`, `addres`, `detail`, `gen_date`) VALUES
-(26, 'Niyonshuti Prince', 'npprince47@gmail.com', 'Kiyovu', 'sjgsdjhf', '2020-10-22 23:03:01');
+INSERT INTO `quote` (`quote_id`, `full_name`, `email`, `tel`, `vehicle`, `model`, `car_from`, `car_to`, `exepcted_time`, `detail`, `gen_date`) VALUES
+(1, 'Niyonshuti Prince', 'npprince47@gmail.com', '0780589950', 'Benz Cl 3', 'Benz', 'Dar Salam', 'Kigali', '2020-10-26', 'I want to transport this and receive it in good conditions , please take care of the body work and help m with the other 2 Model of Benz im transporting ', '2020-10-25 18:30:00');
 
 -- --------------------------------------------------------
 
@@ -153,9 +177,7 @@ CREATE TABLE `service` (
 --
 
 INSERT INTO `service` (`service_id`, `tittle`, `details`, `photo`, `gen_date`) VALUES
-(4, 'Car Transportation', 'vhjhjnkm\r\n', NULL, '2020-10-20 16:29:18'),
-(5, 'Cargo data', 'Testing update data ', NULL, '2020-10-20 16:29:18'),
-(6, 'svfklfksd', 'kdsfbdsbjhsd.\r\n6%r', NULL, '2020-10-22 23:10:04');
+(8, 'Car Transportation', '                                            sfa                                        ', 'Car Transportation.jpg', '2020-11-01 20:03:46');
 
 -- --------------------------------------------------------
 
@@ -265,6 +287,12 @@ ALTER TABLE `faq`
   ADD PRIMARY KEY (`faq_id`);
 
 --
+-- Indexes for table `favicon`
+--
+ALTER TABLE `favicon`
+  ADD PRIMARY KEY (`fav_id`);
+
+--
 -- Indexes for table `partner`
 --
 ALTER TABLE `partner`
@@ -329,6 +357,12 @@ ALTER TABLE `faq`
   MODIFY `faq_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
+-- AUTO_INCREMENT for table `favicon`
+--
+ALTER TABLE `favicon`
+  MODIFY `fav_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `partner`
 --
 ALTER TABLE `partner`
@@ -344,13 +378,13 @@ ALTER TABLE `price`
 -- AUTO_INCREMENT for table `quote`
 --
 ALTER TABLE `quote`
-  MODIFY `quote_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `quote_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `site_details`
