@@ -28,3 +28,13 @@
       
    </body>
 </html>
+
+<div class="row">
+   <div class="col-lg-5">
+      
+   </div>
+   <div class="col-lg-7">
+      <h1>Welcome To Rwanda</h1>
+      <p>Discover the hidden beauty from the bottom</p>
+   </div>
+</div>

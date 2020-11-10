@@ -24,6 +24,13 @@
         $favicon=$row5['favicon'];
         $logo=$row5['logo'];
     }
+
+    $sql_slide=" SELECT * FROM `slider` ";
+    $result_slide=$conn->query($sql_slide);
+    while ($row_slide = $result_slide->fetch()) {
+        $slide_1=$row_slide['slide_1'];
+        $slide_2=$row_slide['slide_2'];
+    }
 ?>
 <!-- home-200:30-->
 <head>

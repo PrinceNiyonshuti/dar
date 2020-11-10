@@ -99,6 +99,10 @@ if(isset($_SESSION['username']) == false){
                     </li>
 
                     <li>
+                       <a href="index.php?land"><i class="menu-icon active fa fa-tasks"></i> Land Marks </a>
+                    </li>
+
+                    <li>
                        <a href="index.php?service"><i class="menu-icon active fa fa-tasks"></i> Service </a>
                     </li>
 
@@ -254,6 +258,11 @@ if(isset($_SESSION['username']) == false){
         elseif(isset($_GET['logo']))
         {           
             include("logo.php");
+        }
+
+        elseif(isset($_GET['land']))
+        {           
+            include("land.php");
         }
 
         else
