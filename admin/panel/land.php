@@ -163,7 +163,7 @@
                                                         <label class="form-label">First Land Mark</label>
                                                         <img class="align-self-center  mr-3" src="../img/slide/<?php echo $favicon; ?>" alt="Blog Cover" id="favicon" alt="Card image cap" width="400px" height="200px">
                                                         <br><br>
-                                                        <input type='file' id="profile" name="favicon" onchange="readURL_1(this);" />                         
+                                                        <input type='file' id="profile" name="slide_1" onchange="readURL_1(this);" />                         
                                                     </div>
                                                 </div>
 
@@ -172,7 +172,7 @@
                                                         <label class="form-label">Second Land Mark</label>
                                                         <img class="align-self-center  mr-3" src="../img/slide/<?php echo $logo; ?>" alt="Blog Cover" id="blah" alt="Card image cap" width="400px" height="200px">
                                                         <br><br>
-                                                        <input type='file' id="profile" name="logo" onchange="readURL(this);" />                         
+                                                        <input type='file' id="profile" name="slide_2" onchange="readURL(this);" />                         
                                                     </div>
                                                 </div>
                                             </div>
