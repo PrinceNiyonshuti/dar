@@ -130,7 +130,7 @@
                         <div class="position-relative">
                             <div class="row">
                                 <div class="col-lg-3 col-md-12">
-                                    <a id="logo" href="index.php" class="d-inline-block margin-tb-15px"><img src="admin/img/logo/<?php echo $logo; ?>" alt="" width="188px" height="41px"></a>
+                                    <!-- <a id="logo" href="index.php" class="d-inline-block margin-tb-15px"><img src="admin/img/logo/<?php echo $logo; ?>" alt="" width="188px" height="41px"></a> -->
                                     <a class="mobile-toggle padding-15px background-second-color border-radius-3" href="#"><i class="fa fa-bars"></i></a>
                                 </div>
                                 <div class="col-lg-7 col-md-12 position-inherit">
@@ -346,9 +346,9 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="about-us sm-mb-45px">
-                        <div class="logo-footer margin-bottom-35px">
+                        <!-- <div class="logo-footer margin-bottom-35px">
                             <a href="#"><img src="admin/img/logo/<?php echo $logo; ?>" alt="" width="188px" height="41px"></a>
-                        </div>
+                        </div> -->
                         <div class="text margin-bottom-35px">
                             <?php echo $description; ?>
                         </div>
