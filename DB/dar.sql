@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2020 at 11:07 PM
+-- Generation Time: Nov 10, 2020 at 08:55 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.15
 
@@ -177,7 +177,9 @@ CREATE TABLE `service` (
 --
 
 INSERT INTO `service` (`service_id`, `tittle`, `details`, `photo`, `gen_date`) VALUES
-(8, 'Car Transportation', '                                            sfa                                        ', 'Car Transportation.jpg', '2020-11-01 20:03:46');
+(8, 'Car Transportation', '                                            sfa                                        ', 'Car Transportation.jpg', '2020-11-01 20:03:46'),
+(10, 'svfklfksd', 'z', 'svfklfksd.jpg', '2020-11-10 07:23:51'),
+(11, 'Cargo data', 'df', 'Cargo data.png', '2020-11-10 07:24:24');
 
 -- --------------------------------------------------------
 
@@ -201,6 +203,25 @@ CREATE TABLE `site_details` (
 
 INSERT INTO `site_details` (`detail_id`, `site_description`, `phone`, `mobile`, `address`, `email`, `about`) VALUES
 (1, 'Site details need to be updated', '250780900900', '447766450718', '                                                                                                                                                                                                                                KN 7 RD, KIGALI - RWANDA                                                                                                                                                                                                                ', 'info@dartransport.com', '                                                                                                                                                                                                                                25 years of experience in Logistics services\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\nconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua                                                                                                                                                                                                                ');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `slider`
+--
+
+CREATE TABLE `slider` (
+  `slide_id` int(11) NOT NULL,
+  `slide_1` longtext DEFAULT NULL,
+  `slide_2` longtext DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `slider`
+--
+
+INSERT INTO `slider` (`slide_id`, `slide_1`, `slide_2`) VALUES
+(1, 'slide_1.jpg', 'slide_2.jpg');
 
 -- --------------------------------------------------------
 
@@ -268,7 +289,8 @@ CREATE TABLE `team` (
 --
 
 INSERT INTO `team` (`team_id`, `full_name`, `tittle`, `profile`, `linked_in`, `gmail`, `twitter`) VALUES
-(2, 'Gassim Kakoom', 'Engineer', 'Gassim Kakoom.jpg', 'gassimKakoom', 'gassim@gmail.com', '@gassim');
+(2, 'Gassim Kakoom', 'Engineer', 'Gassim Kakoom.jpg', 'gassimKakoom', 'gassim@gmail.com', '@gassim'),
+(3, 'MBANDA', 'Engineer', 'MBANDA.png', 'gassimKakoom', 'gassim@gmail.com', '@gassim');
 
 --
 -- Indexes for dumped tables
@@ -321,6 +343,12 @@ ALTER TABLE `service`
 --
 ALTER TABLE `site_details`
   ADD PRIMARY KEY (`detail_id`);
+
+--
+-- Indexes for table `slider`
+--
+ALTER TABLE `slider`
+  ADD PRIMARY KEY (`slide_id`);
 
 --
 -- Indexes for table `tax_calculation`
@@ -384,13 +412,19 @@ ALTER TABLE `quote`
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `site_details`
 --
 ALTER TABLE `site_details`
   MODIFY `detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `slider`
+--
+ALTER TABLE `slider`
+  MODIFY `slide_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tax_calculation`
@@ -408,7 +442,7 @@ ALTER TABLE `tbl_users_login`
 -- AUTO_INCREMENT for table `team`
 --
 ALTER TABLE `team`
-  MODIFY `team_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `team_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

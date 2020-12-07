@@ -38,7 +38,7 @@
 					<div class="col-lg-3 col-md-6">
 						<div class="team layout-2">
 							<div class="img-team">
-								<img src="admin/img/team/<?php echo $fetch['profile']?>" alt="">
+								<img src="admin/img/team/<?php echo $fetch['profile']?>" width="255px" height="255px" alt="">
 							</div>
 							<div class="padding-20px">
 								<h3><?php echo $fetch['full_name'];?></h3>
