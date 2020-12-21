@@ -3,7 +3,7 @@
             background: url(admin/img/slide/<?php echo $slide_1; ?>) no-repeat 50% 50%;
             background-size: cover;
             width: 100%;
-            height: 100%;
+            height: 400px;
             position: relative;
             overflow: hidden;
             /*margin: 0 10px;*/
@@ -23,7 +23,7 @@
             background: url(admin/img/slide/<?php echo $slide_2; ?>) no-repeat 50% 50%;
             background-size: cover;
             width: 100%;
-            height: 100%;
+            height: 400px;
             position: relative;
             overflow: hidden;
             /*margin: 0 10px;*/
@@ -38,20 +38,27 @@
             /*transform: skew(200.25deg);*/
             right: 650px;
         }
-        /*
-        .banner:hover .overlay {
-            left: 0;
-            transform: inherit;
+
+    .test {
+        margin-top: -298px;
+    }
+
+    
+    @media only screen and (max-width: 600px) {
+      .test {
+        margin-top: 0px;
         }
-        */
+    }
+
+
     </style>
-    <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="logistics-2" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+    <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper test fullwidthbanner-container" data-alias="logistics-2" data-source="gallery" style="position:relative;width:100%;height:440px !important;margin-top:0px;margin-bottom:0px">
         <!-- START REVOLUTION SLIDER 5.4.8 fullwidth mode -->
-        <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.8">
+        <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;height:440px !important;" data-version="5.4.8">
             
             <ul>
                 <!-- SLIDE  -->
-                <li data-index="rs-5" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <li data-index="rs-5" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" >
                     <div class="banner">
                         <div class="overlay">
                             <!-- MAIN IMAGE -->
@@ -101,7 +108,7 @@
     </div>
     <!-- END REVOLUTION SLIDER -->
 
-    <div class="background-white">
+    <div class="background-white test">
         <div class="service-section-2 container">
             <div class="row">
 

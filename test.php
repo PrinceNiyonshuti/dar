@@ -1,40 +1,18 @@
+<!DOCTYPE html>
 <html>
-   
-   <head>
-      <title>Sending HTML email using PHP</title>
-   </head>
-   
-   <body>
-      
-      <?php
-         $to = "npprince47@gmail.com";
-         $subject = "Notification Receiver ";
-         
-         $message = "<b> Hello , I want to receive your notification when site launched </b> <br> My E-mail is :  ";
-         $message .= "<h1>This is headline.</h1>";
-         
-         $header = "From:abc@somedomain.com \r\n";
-         $header .= "MIME-Version: 1.0\r\n";
-         $header .= "Content-type: text/html\r\n";
-         
-         $retval = mail ($to,$subject,$message,$header);
-         
-         if( $retval == true ) {
-            echo "Message sent successfully...";
-         }else {
-            echo "Message could not be sent...";
-         }
-      ?>
-      
-   </body>
-</html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+  </head>
 
-<div class="row">
-   <div class="col-lg-5">
-      
-   </div>
-   <div class="col-lg-7">
-      <h1>Welcome To Rwanda</h1>
-      <p>Discover the hidden beauty from the bottom</p>
-   </div>
-</div>
+  <body>
+
+
+
+
+<a class="w-inline-block social-share-btn email" href="mailto:?subject=&body=:%20" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' + encodeURIComponent(document.URL)); return false;"> Test </a>
+
+
+<a class="w-inline-block social-share-btn lnk" href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" target="_blank" title="Share on LinkedIn" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)); return false;">Linked</a>
+
+</html>

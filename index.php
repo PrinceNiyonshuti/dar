@@ -357,6 +357,7 @@
                             <a href="#"><img src="admin/img/logo/<?php echo $logo; ?>" alt="" width="188px" height="41px"></a>
                         </div> -->
                         <div class="text margin-bottom-35px">
+                            <h2 class="title">Site Details</h2>
                             <?php echo $description; ?>
                         </div>
                         <!-- <a href="#" class="nile-bottom sm">Read More</a> -->
@@ -406,19 +407,24 @@
                             </div>
                         </div>
                     </div>
+
+                    <br>
+                    <!--  Social -->
+                    <ul class="social-media list-inline text-white">
+                        <li class="list-inline-item"><a class="facebook" href="https://web.facebook.com/Radiotv10Rwanda/posts/2972290916205580?_rdc=1&_rdr" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+
+                        <li class="list-inline-item"><a class="youtube" href="https://www.youtube.com/channel/UCzCyzQ2VFkHxAqmlb1mTH8g" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+
+
+                        <li class="list-inline-item"><a class="instagram" href="https://www.instagram.com/cartransporterdar/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+                        <li class="list-inline-item"><a class="twitter" href="https://twitter.com/dartransporter?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <!-- // Social -->
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <!--  Social -->
-                    <ul class="social-media list-inline text-lg-right text-center margin-0px text-white">
-                        <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a class="youtube" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a class="google" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li class="list-inline-item"><a class="rss" href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                    </ul>
-                    <!-- // Social -->
+                    
                 </div>
 
             </div>
