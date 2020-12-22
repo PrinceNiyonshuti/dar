@@ -351,7 +351,7 @@
         <div class="container padding-tb-100px">
             <div class="row">
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="about-us sm-mb-45px">
                         <!-- <div class="logo-footer margin-bottom-35px">
                             <a href="#"><img src="admin/img/logo/<?php echo $logo; ?>" alt="" width="188px" height="41px"></a>
@@ -364,7 +364,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="nile-widget widget_nav_menu sm-mb-45px">
                         <h2 class="title">Our Services</h2>
                         <ul class="footer-menu">
@@ -384,7 +384,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="nile-widget">
                         <div class="margin-bottom-60px">
                             <h2 class="title">Location</h2>
@@ -421,10 +421,6 @@
                         <li class="list-inline-item"><a class="twitter" href="https://twitter.com/dartransporter?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                     </ul>
                     <!-- // Social -->
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    
                 </div>
 
             </div>
