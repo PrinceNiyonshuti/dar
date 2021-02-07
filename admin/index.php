@@ -64,8 +64,8 @@
                     <div class="register-link">
                         <center>
                             <p>
-                                Don't you have account?
-                                <a href="register.php">Sign Up Here</a>
+                                Back Home ?
+                                <a href="../index.php">Home</a>
                             </p>                            
                         </center>
                     </div>

@@ -265,6 +265,11 @@ if(isset($_SESSION['username']) == false){
             include("land.php");
         }
 
+        elseif(isset($_GET['view_quote']))
+        {           
+            include("view_quote.php");
+        }
+
         else
         {
             include("home.php");

@@ -162,9 +162,9 @@
                                             <a style="color: #ffc107;" href="index.php?contact">Contact Us</a>
                                         </li>
 
-                                        <li>
+                                        <!-- <li>
                                             <a style="color: #ffc107;" href="index.php?blog">Blog</a>
-                                        </li>
+                                        </li> -->
 
                                         <li>
                                             <a style="color: #ffc107;" href="index.php?tax">Tax Calculation</a>
@@ -348,7 +348,7 @@
 
 <!-- footer -->
     <footer class="layout-dark">
-        <div class="container padding-tb-100px">
+        <div class="container padding-tb-100px" style="padding-top: 20px;padding-bottom: 20px;">
             <div class="row">
 
                 <div class="col-lg-4 col-md-6">
@@ -386,7 +386,7 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="nile-widget">
-                        <div class="margin-bottom-60px">
+                        <div style="margin-bottom: 5px;">
                             <h2 class="title">Location</h2>
                             <div class="contact-info opacity-9">
                                 <div class="icon margin-top-5px"><span class="icon_pin_alt"></span></div>
@@ -397,7 +397,7 @@
                             </div>
                         </div>
                         <div class="call_center">
-                            <h2 class="title">Call Center</h2>
+                            <h2 class="title">Find Us</h2>
                             <div class="contact-info opacity-9">
                                 <div class="icon  margin-top-5px"><span class="icon_phone"></span></div>
                                 <div class="text">

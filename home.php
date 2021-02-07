@@ -127,7 +127,7 @@
                                 <a href="#" class="title"><?php echo $fetch['tittle'];?></a>
                             </div>
                             <div class="dis clearfix">
-                                Chances are unless you are very lucky you will.
+                                .
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
 
                 </div>
                 <div class="col-lg-6">
-                    <video height="300px" controls="0" autoplay="on">
+                    <video height="300px" controls muted >
                       <source src="assets/video/advert.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
@@ -216,7 +216,7 @@
                     <div class="col-lg-7">
                         <div class="icon text-main-color"><i class="fa fa-truck"></i></div>
                         <div class="h2">Our Service</div>
-                        <div class="des">In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate ultrices augue, eget feugiat lectus efficitur in. Nulla non pharetra justo. Nunc viverra consectetur bibendum. </div>
+                        <div class="des">Number 1 Auto Transport is one of the nation’s best car shipping services companies. For instance, we have over 3 years of experience, have shipped over 50,000 cars, and have millions of miles of coast-to-coast auto transport experience. Due to this, our high-quality car delivery services are renowned across Africa. Overall, we ship many types of vehicles— cars, motorcycles Therefore, our full range of first-class shipping services will ensure that you receive timely door-to-door service for the complete shipping of your vehicle. Finally </div>
                     </div>
                 </div>
             </div>
@@ -236,7 +236,7 @@
                         <div class="service-icon-box">
                             <div class="icon"><img src="assets/icons/service-dark-1.png" alt=""></div>
                             <a href="#" class="title h2"><?php echo $fetch['tittle'];?></a>
-                            <div class="des">Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem leo ultricies et vitae enim.</div>
+                            <div class="des">Meeting And Surpassing Expectations by Performing at a satisfactory level or above is one way to ensure job security,</div>
                         </div>
                     </div>
                 <?php
@@ -246,7 +246,7 @@
 
 
             <div class="text-center">
-                <a href="#" class="nile-bottom md">Show all <i class="fa fa-arrow-right"></i> </a>
+                <a href="index.php?service" class="nile-bottom md">Show all <i class="fa fa-arrow-right"></i> </a>
             </div>
 
         </div>
@@ -262,7 +262,9 @@
                     <div class="col-lg-7">
                         <div class="icon text-main-color"><i class="fa fa-commenting-o"></i></div>
                         <div class="h2">Testimonials</div>
-                        <div class="des">In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate ultrices augue, eget feugiat lectus efficitur in. Nulla non pharetra justo. Nunc viverra consectetur bibendum. </div>
+                        <div class="des">Below are testimonials from individuals that have used http://cartransporterdar.com/ to help them  theto ship car transport and vehicle from Dar Es Salam that delivered their automobile. 
+
+. </div>
                     </div>
                 </div>
             </div>
@@ -273,7 +275,9 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="testimonials layout-1">
                         <div class="icon"></div>
-                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
+                        <div class="text">Just wanted to send you over a little thank you note for helping us find a car shipping company. We were pleased with their car delivery service and with your vehicle shipping directory. Thank you for your services and profesionalism you have 
+
+</div>
                         <div class="meta">
                             <div class="testimonials-thum"><img src="assets/img/testimonials-1.jpg" alt=""></div>
                             <div class="name">Rabie Elkheir</div>
@@ -285,7 +289,8 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="testimonials layout-1">
                         <div class="icon"></div>
-                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
+                        <div class="text">I was having a hard time finding a vehicle shipping company that would be able to transport my 36 foot truck and trailer. When i used your website i got responses within hours. I got a cheap rate and was very happy with the service i received. 
+</div>
                         <div class="meta">
                             <div class="testimonials-thum"><img src="assets/img/testimonials-2.jpg" alt=""></div>
                             <div class="name">Khalid Alnoor</div>
@@ -297,7 +302,9 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="testimonials layout-1">
                         <div class="icon"></div>
-                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</div>
+                        <div class="text">When i purchased my car, i needed a price for shipping it to me quick. Your web site was fast, i got auto shipping prices back quick and i had my new BMW in my driveway shortly after. Great site, great service thanks a bunch.
+
+</div>
                         <div class="meta">
                             <div class="testimonials-thum"><img src="assets/img/testimonials-3.jpg" alt=""></div>
                             <div class="name">Amal Salman</div>

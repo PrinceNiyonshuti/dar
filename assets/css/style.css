@@ -2011,7 +2011,7 @@ footer.layout-dark .contact-info .text {
 footer.layout-dark .nile-widget h2.title {
   color: #fff;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 500;
 }
 footer.layout-dark .nile-widget.widget_nav_menu ul {
@@ -2128,7 +2128,7 @@ h1 {
 .h2,
 h2 {
   font-size: 23px;
-  line-height: 28px;
+  line-height: 23px;
 }
 
 .h3,

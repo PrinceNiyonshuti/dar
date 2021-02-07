@@ -59,8 +59,7 @@
                                                         <td><?php echo $fetch['tel']?></td>
                                                         <td><?php echo $fetch['detail']?></td>
                                                         <td>
-
-                                                            <a href="index.php?quote&delete_worship=<?php echo $quote_id;?>" onclick="if(!confirm('Do you really want to delete This Quote Request ?'))return false;else return true;" title="Delete Quote"><i class='menu-icon fa fa-trash'></i> Delete</a>
+                                                            <a href="index.php?view_quote&quote_id=<?php echo $quote_id;?>" onclick="if(!confirm('Do you really want to View This Quote Request ?'))return false;else return true;" title="Delete Quote"><i class='menu-icon fa fa-list'></i> View </a>
                                                            
                                                         </td>
                                                     </tr>

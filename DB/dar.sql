@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 10, 2020 at 08:55 AM
+-- Generation Time: Dec 27, 2020 at 08:57 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.3.15
 
@@ -102,14 +102,6 @@ CREATE TABLE `partner` (
   `date` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `partner`
---
-
-INSERT INTO `partner` (`partner_id`, `p_name`, `logo`, `date`) VALUES
-(4, 'Partner ', 'Partner .jpg', '2020-10-20 10:11:14'),
-(5, 'AACR', 'AACR.jpeg', '2020-10-22 22:43:11');
-
 -- --------------------------------------------------------
 
 --
@@ -177,9 +169,9 @@ CREATE TABLE `service` (
 --
 
 INSERT INTO `service` (`service_id`, `tittle`, `details`, `photo`, `gen_date`) VALUES
-(8, 'Car Transportation', '                                            sfa                                        ', 'Car Transportation.jpg', '2020-11-01 20:03:46'),
-(10, 'svfklfksd', 'z', 'svfklfksd.jpg', '2020-11-10 07:23:51'),
-(11, 'Cargo data', 'df', 'Cargo data.png', '2020-11-10 07:24:24');
+(8, 'clearing agent', 'we ensure that purchased goods are delivered to the respective buyers. our clearing agent also handles documentation related to the shipments, including insurance forms and dispatch forms                                                                                                                                                              ', 'clearing agent.jpg', '2020-11-01 20:03:46'),
+(10, 'professionals driver', ' we have well trained professional drivers, means that we guarantee you  security of your car                                            z                                                                                                                        ', 'professionals driver.jpg', '2020-11-10 07:23:51'),
+(11, 'Great Customer Service', 'meeting and surpassing expectations                                                                                                                                                                                                 ', 'Great Customer Service.jpg', '2020-11-10 07:24:24');
 
 -- --------------------------------------------------------
 
@@ -202,7 +194,7 @@ CREATE TABLE `site_details` (
 --
 
 INSERT INTO `site_details` (`detail_id`, `site_description`, `phone`, `mobile`, `address`, `email`, `about`) VALUES
-(1, 'Site details need to be updated', '250780900900', '447766450718', '                                                                                                                                                                                                                                KN 7 RD, KIGALI - RWANDA                                                                                                                                                                                                                ', 'info@dartransport.com', '                                                                                                                                                                                                                                25 years of experience in Logistics services\r\nLorem ipsum dolor sit amet, consectetur adipisicing elit, et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\nconsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua                                                                                                                                                                                                                ');
+(1, '                                                            Car Shipping offers door-to-door auto transport service. This option makes shipping your  vehicle so convenient.\r\n                                                                                                            ', '250780900900', '447766450718', '                                                                                                                                                                                                                                                                                                                                                        KN 7 RD, KIGALI - RWANDA                                                                                                                                                                                                                                                                                                                                ', 'info@cartransporterdar.com', '                                                                                                                                                                                                                                                                                                                                                        3 years of experience in Logistics services.\r\nmanagement activities  include inbound and outbound transportation management  from Dar es Salam                                                                                                                                                                                                                                                                                       ');
 
 -- --------------------------------------------------------
 
@@ -221,7 +213,7 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`slide_id`, `slide_1`, `slide_2`) VALUES
-(1, 'slide_1.jpg', 'slide_2.jpg');
+(1, 'slide_1.jpeg', 'slide_2.jpeg');
 
 -- --------------------------------------------------------
 
@@ -240,7 +232,7 @@ CREATE TABLE `tax_calculation` (
 --
 
 INSERT INTO `tax_calculation` (`tax_id`, `detail`, `gen_date`) VALUES
-(1, 'svafjvsdhvfjshfsa.\r\n125 %V A AHSDL*&', '2020-10-23');
+(1, '                                                             Tax calculation in Rwanda based in different conditions. \r\n\r\n\r\n                                                                                                         ', '2020-10-23');
 
 -- --------------------------------------------------------
 
@@ -289,8 +281,9 @@ CREATE TABLE `team` (
 --
 
 INSERT INTO `team` (`team_id`, `full_name`, `tittle`, `profile`, `linked_in`, `gmail`, `twitter`) VALUES
-(2, 'Gassim Kakoom', 'Engineer', 'Gassim Kakoom.jpg', 'gassimKakoom', 'gassim@gmail.com', '@gassim'),
-(3, 'MBANDA', 'Engineer', 'MBANDA.png', 'gassimKakoom', 'gassim@gmail.com', '@gassim');
+(2, 'Lewis', 'Engineer', 'Lewis.jpg', 'gassimKakoom', 'gassim@gmail.com', '@gassim'),
+(3, 'Irumva Yves', 'Engineer', 'Irumva Yves.png', 'gassimKakoom', 'gassim@gmail.com', '@gassim'),
+(4, 'Patrick KAMBALI', 'CEO', 'Patrick KAMBALI.jpg', '@Patrickkambali', 'kambali@gmail.com', '@Patrickkambali');
 
 --
 -- Indexes for dumped tables
@@ -442,7 +435,7 @@ ALTER TABLE `tbl_users_login`
 -- AUTO_INCREMENT for table `team`
 --
 ALTER TABLE `team`
-  MODIFY `team_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `team_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

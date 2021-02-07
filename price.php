@@ -40,7 +40,7 @@
 							<div class="title main-color"><?php echo $fetch['price_name'];?></div>
 							<div class="price"><span>$</span><?php echo $fetch['amount'];?></div>
 							<div class="per-mile">PER MILE</div>
-							<div class="item-img"><img src="admin/img/price/<?php echo $fetch['photo']?>" alt=""></div>
+							<div class="item-img"><img src="admin/img/price/<?php echo $fetch['photo']?>" style="width: 255px;height: 191px;" alt=""></div>
 							<ul class="elements">
 								<li><?php echo $fetch['descr'];?></li>
 							</ul>

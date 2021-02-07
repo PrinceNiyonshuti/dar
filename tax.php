@@ -4,7 +4,8 @@
                 <h1>Tax Calculation</h1>
                 <ol class="breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li class="active">Tax Calculation</li>
+                    <li class="active">Tax Calculation</li><br>
+                    
                 </ol>
             </div>
         </div>
@@ -32,6 +33,10 @@
                             echo $detail;
                         ?>
                     </div>
+                    <p>for more info please refer to </p>
+                    
+                    <a href="https://www.rra.gov.rw/index.php?id=40">
+                    <style: color:"blue";>https://www.rra.gov.rw/index.php?id=40</style></a>
                 </div>
             </div>
         </div>

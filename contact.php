@@ -68,9 +68,11 @@
 
     <div class="map-layout">
         <div class="map-embed">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5419632916532!2d30.05814921410453!3d-1.9355389372232938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca416e1fe4a05%3A0xd7094dcb1526e3f1!2sKN%207%20Rd%2C%20Kigali!5e0!3m2!1sen!2srw!4v1603107666495!5m2!1sen!2srw" width="100%" height="390" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.4562098978577!2d30.10694580481216!3d-1.9716626021481962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca7cb464af60b%3A0x5ff34a70fabd6dab!2sKK%20345%20St%2C%20Kigali!5e0!3m2!1sen!2srw!4v1608850995861!5m2!1sen!2srw" width="100%" height="390" frameborder="0" style="border:0;" allowfullscreen="" ></iframe>
+
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-lg-8"></div>
                 <div class="col-lg-4">
@@ -101,5 +103,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
